@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>GTM練習用サイト</title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; line-height: 1.6; }
+        .btn { padding: 10px 20px; background: #007BFF; color: white; border: none; cursor: pointer; border-radius: 5px; }
+        .box { background: #f4f4f4; padding: 20px; margin-top: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>GTM練習用テストサイト</h1>
+    <p>このページを使って、クリック計測やフォームのテストが行えます。</p>
+
+    <hr>
+
+    <h3>1. クリック計測の練習</h3>
+    <button class="btn" id="test-button">テストボタン（IDあり）</button>
+    <br><br>
+    <a href="https://example.com" target="_blank" class="download-link">外部リンク（example.comへ）</a>
+
+    <div class="box">
+        <h3>2. フォーム送信の練習</h3>
+        <form id="practice-form" action="#" method="GET">
+            <label for="name">お名前：</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">送信する</button>
+        </form>
+    </div>
+
+    <div class="box">
+        <h3>3. スクロール計測の練習</h3>
+        <p>（スクロールイベントを試すために縦幅を確保しています...）</p>
+        <div style="height: 1000px;"></div>
+        <p>ここまでスクロールしました！</p>
+    </div>
+</body>
+</html>
